@@ -199,18 +199,18 @@ height: 40px;
 left: 748px;
 
 
-top: 413px;
+top: 405px;
 
 margin-left: 29px;
 
-
+border-radius: 0px;
 
 
 
 
 /* Blue / blue-5 */
 
-background: #379FFF;
+
 }
 .button{
   
@@ -231,12 +231,12 @@ line-height: 22px;
 display: flex;
 align-items: center;
 text-align: center;
-background-color: transparent;
-border: transparent;
+
+
 
 /* Grey/grey-1 */
 
-color: #FFFFFF;
+background-color: #379FFF;
 }
 .card {
   box-sizing: border-box;
