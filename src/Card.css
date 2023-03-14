@@ -20,7 +20,7 @@ color: #506080;
 height: 24px;
 left: 22px;
 right: 588px;
-top: 50px;
+top: 65px;
 
 font-family: 'Open Sans';
 font-style: normal;
@@ -36,7 +36,7 @@ color: #506080;
 }
 .green {
     position: absolute;
-    top: 50px;
+    top: 65px;
     left: 188px;
 
     font-family: 'Open Sans';

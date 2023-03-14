@@ -1,17 +1,14 @@
-// import React, { useState } from 'react';
+import React from 'react';
  import './Dropdown.css'
+ import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import { Button, Dropdown, message, Space, Tooltip } from 'antd';
+ import  { useState } from 'react';
 // import { InputNumber } from 'antd';
-// import { Select } from 'antd';
+
 // function DropdownInput({ options }) {
 
-//   const { Option } = Select;
-//   const [showOptions, setShowOptions] = useState(false);
-//   const [selectedOption, setSelectedOption] = useState('');
-
-//   function handleOptionClick(option) {
-//     setSelectedOption(option);
-//     setShowOptions(false);
-//   }
+  
+  
 // return (
 //   <>
 
@@ -83,15 +80,14 @@
 // export default DropdownInput;
 
 
-import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Dropdown, message, Space, Tooltip } from 'antd';
-import React from 'react';
+
+
 const handleButtonClick = (e) => {
-  message.info('Click on left button.');
+  
   console.log('click left button', e);
 };
 const handleMenuClick = (e) => {
-  message.info('Click on menu item.');
+  
   console.log('click', e);
 };
 const items = [
@@ -118,23 +114,38 @@ const items = [
 ];
 const menuProps = {
   items,
-  onClick: handleMenuClick,
+  onClick: handleButtonClick,
 };
-const DropdownInput = () => (
-  <Space wrap>
+const DropdownInput = () => {
+
+  const [showOptions, setShowOptions] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  function handleOptionClick(option) {
+    setSelectedOption(option);
+    setShowOptions(false);
+  }
+  return (<Space wrap>
    
     
 
     
-    <Dropdown menu={menuProps} className = ''>
-      <Button className='select'>
+    <Dropdown menu={menuProps} className = '' onClick ={()=>{  setSelectedOption(menuProps.items.label);
+    setShowOptions(false);}}  >
+      <Button className='select' onClick={() => setShowOptions(!showOptions)  }  >
         <Space  className='placeholder'>
-          Select Payment Terms
-          <DownOutlined className='arrow'/>
+        {selectedOption || (
+          <>
+            <span   >Select Payment Terms</span>
+            <DownOutlined className='arrow'/>
+            </>
+          )}
+          
         </Space>
       </Button>
     </Dropdown>
    
   </Space>
 );
+        }
 export default DropdownInput;

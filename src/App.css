@@ -110,7 +110,7 @@ top: 76px;
 height: 24px;
 left: 24px;
 
-top: 354px;
+top: 370px;
 
 
 font-style: normal;
@@ -417,5 +417,7 @@ Title {
   color: red;
 }
 
-
+.img {
+  position: absolute;
+}
 
