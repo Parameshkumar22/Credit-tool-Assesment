@@ -1,23 +1,20 @@
 import React from 'react';
 import './App.css';
-import { Input ,Typography } from 'antd';
-import styled from 'styled-components';
+import { Input ,Typography, Menu } from 'antd';
+
 
 import imag from './Bannerimage.svg';
- import Dropdown from './Dropdown.js'
-import {Tooltip} from 'antd';
-import { Button, DatePicker } from 'antd';
+
+import { Button } from 'antd';
 
 import { useState } from 'react';
-import { CheckCircleTwoTone } from '@ant-design/icons';
 
-import { Progress } from 'antd';
 
 import DropdownInput from './Dropdown.js';
 import Cards from './Card';
+import { Layout } from 'antd';
 
-
-
+const { Header} = Layout;
 let obj = [
   { total : 1000000,
    profit : 5,
@@ -38,22 +35,34 @@ function App() {
         
    }
    
-   const options = ['3 Months', '6 Months', '9 Months', '12 Months'];
+   
   return ( 
   
   <>
 
 
-    <div className='test'> </div>
-   <div className='black'>
+    
+   {/* <div className='black'>
    
-  </div>
+  </div> */}
+  <Layout className="layout">
+    <Header>
+     
+      <Menu
+        theme="dark"
+        
+       
+        
+      />
+    </Header>
+
+    </Layout>
    
    <div className='sidebar'>
    <div className='dashboard'>
  
    
-   <Title style={{  position : 'absolute' ,  marginBottom : '20px' }} level={3}>Credit Limit Assessment  </Title>    
+   <Title style={{   fontSize : '20px', fontFamily : 'Open Sans', fontWeight : 400 , display : 'flex' , flex : 'none' , order : '1' , flexGrow : '0' , position : 'absolute' ,  marginLeft : '24px' }} level={3}>Credit Limit Assessment  </Title>    
 </div>
 <div >
   <img  className = 'image'   src={imag}  alt = 'image not found' />
@@ -75,7 +84,7 @@ function App() {
 
    </div>
   
-    {/* <Dropdown options={options}/> */}
+  
     <DropdownInput/>
 
   
@@ -85,27 +94,25 @@ function App() {
 
 
      <div className='button1'>
-     {/* <Buttonbox type="submit" className="button" onSubmit={submithandler}>Proceed</Buttonbox> */}
+     
      <Button  className = "button" type="primary" size={'large'} onSubmit={submithandler} shape = "default" >Proceed</Button>
      </div>
      <div className='card'>
-      {/* <p className='cardhead'>Credit Limit Available for Smartpaddle Technologies Private Limited</p> */}
+      
       
       <Cards obj = {obj} />
      
       
     
       
-      {/*  */}
+     
      </div> 
     
     
     
    
    
-     {/* <p className = 'subhead'> Credit limit available &nbsp; : </p>
-     
-     <p className = 'sub'>  INR &nbsp; {obj[0].total} </p> */}
+    
 
      
       
