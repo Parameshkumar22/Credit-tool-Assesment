@@ -7,7 +7,7 @@ import imag from './Bannerimage.svg';
  import Dropdown from './Dropdown.js'
 import {Tooltip} from 'antd';
 import { Button, DatePicker } from 'antd';
-
+import Buttonbox from './Button';
 import { useState } from 'react';
 import { CheckCircleTwoTone } from '@ant-design/icons';
 import Card from './Card'
@@ -81,8 +81,8 @@ function App() {
 
 
      <div className='button1'>
-     <button type="submit" className="button" onSubmit={submithandler}>Proceed</button>
-    
+     {/* <Buttonbox type="submit" className="button" onSubmit={submithandler}>Proceed</Buttonbox> */}
+     <Button  className = "button" type="primary" size={'large'} onSubmit={submithandler} shape = "default" >Proceed</Button>
      </div>
      <div className='card'>
       <p className='cardhead'>Credit Limit Available for Smartpaddle Technologies Private Limited</p>
