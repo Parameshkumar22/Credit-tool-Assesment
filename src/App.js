@@ -12,7 +12,7 @@ import { useState } from 'react';
 import { CheckCircleTwoTone } from '@ant-design/icons';
 import Card from './Card'
 import { Progress } from 'antd';
-import Hi from './Practice';
+import Progressbar from './Progressbar';
 import DropdownInput from './Dropdown.js';
 
 
@@ -92,7 +92,7 @@ function App() {
       
       <p className ></p>
       
-      <Hi prof = {obj[0].profit} ret = {obj[0].return } debt = {obj[0].debt} curr = {obj[0].current} />
+      <Progressbar prof = {obj[0].profit} ret = {obj[0].return } debt = {obj[0].debt} curr = {obj[0].current} />
      </div> 
     
     
