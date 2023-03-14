@@ -88,6 +88,7 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
+
 .image {
   width: 1204px;
 height: 196px;
@@ -199,7 +200,7 @@ height: 40px;
 left: 748px;
 
 
-top: 405px;
+top: 403px;
 
 margin-left: 29px;
 
@@ -239,73 +240,28 @@ text-align: center;
 background-color: #379FFF;
 }
 .card {
-  box-sizing: border-box;
+ 
 
 position: absolute;
-left: 24px;
+left: 0px;
 
 
 top: 460px;
 
 height: 388px;
 
-
-
-
-
-width: 100%;
-display: flex;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 margin-top: 25px;
-flex: none;
-order: 1;
-flex-grow: 0;
-position:absolute;
-
 
 /* Grey/grey-1 */
 
-background: #FFFFFF;
+
 /* Grey/grey-5
 
 Border
 */
-border: 1px solid #D8DDE6;
-border-radius: 2px;
+
 }
-.cardhead{
-  margin-top: -4px;
-  position: absolute;
-height: 24px;
-left: 24px;
-right: 67px;
-top: 16px;
 
-
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-background: #FFFFFF;
-/* Grey / grey-9 */
-
-color: #506080;
-}
 
 ::placeholder {
   position: absolute;
@@ -455,4 +411,8 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+Title {
+  color: red;
 }

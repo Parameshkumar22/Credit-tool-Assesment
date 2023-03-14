@@ -1,5 +1,54 @@
-.card {
-    position : absolute;
-    width : 170px;
-    
+
+  
+.cardheading {
+   
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 100px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Grey / grey-9 */
+
+color: #506080;
+}
+
+.subheading {
+    position: absolute;
+height: 24px;
+left: 22px;
+right: 588px;
+top: 50px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+/* Grey / grey-9 */
+
+color: #506080;
+}
+.green {
+    position: absolute;
+    top: 50px;
+    left: 188px;
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+text-align: center;
+
+/* Green/green-6 */
+
+color: #0BA968;
 }

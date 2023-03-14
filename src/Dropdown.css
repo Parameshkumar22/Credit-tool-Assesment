@@ -37,11 +37,7 @@
   
 
 .placeholder{
-    position: absolute;
-height: 24px;
-left: 12px;
-right: 32px;
-top: calc(50% - 24px/2);
+   
 
 /* Regular / 16 px | 22 px */
 
@@ -60,11 +56,10 @@ color: #7A8AAC;
 }
 .arrow{
     position: absolute;
-left: 230.32px;
-
-padding-top: 8px;
-width: 13.36px;
-height: 9px;
+  
+  
+   right: 12.32px;
+   top : 12.32px;
 
 /* Gray / gray-6
 

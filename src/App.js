@@ -1,19 +1,21 @@
 import React from 'react';
 import './App.css';
-import { Input } from 'antd';
+import { Input ,Typography } from 'antd';
+import styled from 'styled-components';
 
-import Drop from './Drop';
 import imag from './Bannerimage.svg';
  import Dropdown from './Dropdown.js'
 import {Tooltip} from 'antd';
 import { Button, DatePicker } from 'antd';
-import Buttonbox from './Button';
+
 import { useState } from 'react';
 import { CheckCircleTwoTone } from '@ant-design/icons';
-import Card from './Card'
+
 import { Progress } from 'antd';
-import Progressbar from './Progressbar';
+
 import DropdownInput from './Dropdown.js';
+import Cards from './Card';
+
 
 
 let obj = [
@@ -24,6 +26,7 @@ let obj = [
     current : 5
   }
 ]
+const { Title } = Typography;
 function App() {
    
    
@@ -35,7 +38,7 @@ function App() {
         
    }
    
-  const options = ['3 Months', '6 Months', '9 Months', '12 Months'];
+   const options = ['3 Months', '6 Months', '9 Months', '12 Months'];
   return ( 
   
   <>
@@ -49,11 +52,11 @@ function App() {
    <div className='sidebar'>
    <div className='dashboard'>
  
-   <h1 className='title'>Credit Limit Assessment</h1>
-
+   
+   <Title style={{  position : 'absolute' ,  marginBottom : '20px' }} level={3}>Credit Limit Assessment  </Title>    
 </div>
 <div >
-  <img className='image' src={imag} alt = 'image not found'/>
+  <img  className = 'image'   src={imag}  alt = 'image not found' />
    </div>
   
 
@@ -72,7 +75,8 @@ function App() {
 
    </div>
   
-    <Dropdown options={options}/>
+    {/* <Dropdown options={options}/> */}
+    <DropdownInput/>
 
   
 
@@ -85,23 +89,23 @@ function App() {
      <Button  className = "button" type="primary" size={'large'} onSubmit={submithandler} shape = "default" >Proceed</Button>
      </div>
      <div className='card'>
-      <p className='cardhead'>Credit Limit Available for Smartpaddle Technologies Private Limited</p>
+      {/* <p className='cardhead'>Credit Limit Available for Smartpaddle Technologies Private Limited</p> */}
       
-      
+      <Cards obj = {obj} />
      
       
-      <p className ></p>
+    
       
-      <Progressbar prof = {obj[0].profit} ret = {obj[0].return } debt = {obj[0].debt} curr = {obj[0].current} />
+      {/*  */}
      </div> 
     
     
     
    
    
-     <p className = 'subhead'> Credit limit available &nbsp; : </p>
+     {/* <p className = 'subhead'> Credit limit available &nbsp; : </p>
      
-     <p className = 'sub'>  INR &nbsp; {obj[0].total} </p>
+     <p className = 'sub'>  INR &nbsp; {obj[0].total} </p> */}
 
      
       
