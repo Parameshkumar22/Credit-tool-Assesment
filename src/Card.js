@@ -3,6 +3,7 @@ import React from 'react';
 import './Card.css'
 import {Typography} from 'antd';
 import Progressbar from './Progressbar';
+
 const { Paragraph, Text } = Typography;
 const Cards = (props) => (
   <div className="site-card-border-less-wrapper">

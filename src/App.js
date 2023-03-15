@@ -18,7 +18,7 @@ import { Layout } from 'antd';
 const { Header} = Layout;
 let obj = [
   { total : 1000000,
-   profit : 5,
+   profit : 0,
    return : 4, 
    debt : 3, 
     current : 5
@@ -47,8 +47,8 @@ function App() {
    {/* <div className='black'>
    
   </div> */}
-  <Layout className="layout">
-    <Header>
+  <Layout >
+    <Header >
      
       <Menu
         theme="dark"
@@ -95,7 +95,7 @@ function App() {
 
      <div className='button1'>
      
-     <Button  className = "button" type="primary" size={'large'} onSubmit={submithandler} shape = "default" >Proceed</Button>
+     <Button  className = "button" type="primary" size={'large'} onSubmit={submithandler} shape = "default" style={{ borderRadius: 0 }} >Proceed</Button>
      </div>
      <div className='card'>
       

@@ -419,3 +419,6 @@ Title {
   position: absolute;
 }
 
+.ant-layout-header {
+  width: 100%;
+}
