@@ -4,7 +4,7 @@ import { Input ,Typography, Menu } from 'antd';
 import tick from './Tickmark.svg';
 
 import imag from './Bannerimage.svg';
-
+import { Col, Row } from 'antd';
 import { Button } from 'antd';
 
 import { useState } from 'react';
@@ -18,8 +18,8 @@ import { Layout } from 'antd';
 const { Header} = Layout;
 let obj = [
   { total : 1000000,
-   profit : 0,
-   return : 4, 
+   profit : 5,
+   return : 5, 
    debt : 3, 
     current : 5
   }
@@ -59,6 +59,7 @@ function App() {
     </Header>
 
     </Layout>
+    
    
    
    <div className='dashboard'>
